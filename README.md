@@ -14,8 +14,8 @@ Steps for running systemB<br>
 
 <b>Without docker, application can be run by following the steps given below in order -</b>
 1. For systemA (Prerequisite - node should be installed)<br>
-  a. cd systemA/client -> npm run build<br>
-  b. cd systemA/server -> npm start<br>
+  a. cd systemA/client -> npm install -> npm run build<br>
+  b. cd systemA/server -> npm install -> npm start<br>
 2. For systemB (Prerequisites - Maven and java should be installed in the system)<br>
   a. cd systemB -> mvn clean install<br>
   b. mvn spring-boot:run
