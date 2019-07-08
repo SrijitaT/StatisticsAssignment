@@ -3,7 +3,7 @@ Consists of 3 parts - 1. React client 2.Node express server 3.Thrift Java server
 
 N.B. - systemA and systemB should be run simultaneously
 
-For some reason localhost is not working when run the applications in two dockers. Please change "localhost" to "your machine's IP" in file systemA/server/rpcClient/index.js where thrift.createHttpConnection("localhost", 9090, options) is there.
+<b>For some reason localhost is not working when run the applications in two dockers. Please change "localhost" to "your machine's IP" in file systemA/server/rpcClient/index.js where thrift.createHttpConnection("localhost", 9090, options) is there.</b>
 
 
 From root directory<br>
