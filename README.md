@@ -3,6 +3,9 @@ Consists of 3 parts - 1. React client 2.Node express server 3.Thrift Java server
 
 N.B. - systemA and systemB should be run simultaneously
 
+For some reason localhost is not working when run the applications in two dockers. Please change "localhost" to "your machine's IP" in file systemA/server/rpcClient/index.js where thrift.createHttpConnection("localhost", 9090, options) is there.
+
+
 From root directory<br>
 Steps for running systemA<br>
 1. docker build -t systema systemA<br>
@@ -11,6 +14,7 @@ Steps for running systemA<br>
 Steps for running systemB<br>
 1. docker build -t systemb systemB<br>
 2. docker run -t -p 9090:9090 systemb<br>
+
 
 <b>Without docker, application can be run by following the steps given below in order -</b>
 1. For systemA (Prerequisite - node should be installed)<br>
